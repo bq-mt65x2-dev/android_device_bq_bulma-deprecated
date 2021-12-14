@@ -48,6 +48,12 @@ TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 # Disable memcpy opt (for audio libraries)
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
+# Enable Minikin text layout engine (will be the default soon)
+USE_MINIKIN := true
+
+# Fonts
+EXTENDED_FONT_FOOTPRINT := true
+
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := zImage
 TARGET_KERNEL_SOURCE := kernel/bq/bulma
