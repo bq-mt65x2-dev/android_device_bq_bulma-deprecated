@@ -98,3 +98,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 
 # System Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
+
+# Vold
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
