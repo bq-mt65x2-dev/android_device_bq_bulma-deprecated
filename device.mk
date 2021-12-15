@@ -52,7 +52,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/gps/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
+    $(DEVICE_PATH)/gps/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml \
+    $(DEVICE_PATH)/gps/gps.conf:system/etc/gps.conf
 
 # Graphics
 PRODUCT_PACKAGES += \
