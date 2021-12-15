@@ -76,7 +76,8 @@ PRODUCT_COPY_FILES += \
 # Misc
 PRODUCT_PACKAGES += \
     librs_jni \
-    libnl_2
+    libnl_2 \
+    com.android.future.usb.accessory
 
 # Permissions
 PRODUCT_COPY_FILES += \
