@@ -76,6 +76,9 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset 
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 
+# MALLOC
+MALLOC_IMPL := dlmalloc
+
 # OTA
 BLOCK_BASED_OTA := false
 TARGET_OTA_ASSERT_DEVICE := bulma,Aquaris_E6,alps
