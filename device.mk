@@ -127,6 +127,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/thermal/thermal.conf:system/etc/.tp/thermal.conf \
     $(DEVICE_PATH)/thermal/thermal.off.conf:system/etc/.tp/thermal.off.conf
 
+# Torch
+PRODUCT_PACKAGES += \
+    Torch
+
 # WiFi
 PRODUCT_PACKAGES += \
     libwpa_client \
