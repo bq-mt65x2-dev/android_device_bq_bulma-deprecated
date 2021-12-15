@@ -96,6 +96,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6592
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 
+# Shims
+TARGET_LDPRELOAD += libdirect-coredump.so
+
 # System Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
