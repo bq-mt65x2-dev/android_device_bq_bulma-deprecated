@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio_policy.stub \
     libaudio-resampler \
+    libtinyxml \
     tinymix
 
 PRODUCT_COPY_FILES += \
