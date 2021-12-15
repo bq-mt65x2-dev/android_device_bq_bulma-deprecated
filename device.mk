@@ -46,6 +46,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_effects.conf:system/etc/audio_effects.conf \
     $(DEVICE_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/gps/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
