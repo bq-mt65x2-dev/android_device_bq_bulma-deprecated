@@ -58,6 +58,10 @@ PRODUCT_PACKAGES += \
     charger \
     charger_res_images
 
+# FM Radio
+PRODUCT_PACKAGES += \
+    FMRadio
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/gps/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml \
