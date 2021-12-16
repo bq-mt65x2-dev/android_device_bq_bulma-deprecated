@@ -140,6 +140,10 @@ PRODUCT_PACKAGES += \
     init.xlog.rc \
     ueventd.mt6592.rc
 
+# Shims
+PRODUCT_PACKAGES += \
+    libxlog
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/thermal/.ht120.mtc:system/etc/.tp/.ht120.mtc \
