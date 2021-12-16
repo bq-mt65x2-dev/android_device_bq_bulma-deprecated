@@ -15,6 +15,14 @@
 #
 LOCAL_PATH := $(my-dir)
 
+# audio.primary.mt6592 shims
+include $(CLEAR_VARS)
+LOCAL_MODULE := libshim_audio
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := audio/audio.cpp
+LOCAL_SHARED_LIBRARIES := libbinder libutils liblog libgui libui libicuuc
+include $(BUILD_SHARED_LIBRARY)
+
 # libxlog shims
 include $(CLEAR_VARS)
 LOCAL_CFLAGS += $(LIBLOG_CFLAGS)

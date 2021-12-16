@@ -103,7 +103,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 BOARD_RIL_CLASS := ../../../$(DEVICE_PATH)/ril/
 
 # Shims
-TARGET_LDPRELOAD += libdirect-coredump.so:libxlog.so
+TARGET_LDPRELOAD += libdirect-coredump.so:libshim_audio.so:libxlog.so
 
 # System Properties
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
