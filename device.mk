@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_effects.conf:system/etc/audio_effects.conf \
     $(DEVICE_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbt-vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap
