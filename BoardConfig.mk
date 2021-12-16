@@ -74,7 +74,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset 
 
 # MTK Header
 BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
+BOARD_CUSTOM_MKBOOTIMG := mkmtkbootimg
 
 # MALLOC
 MALLOC_IMPL := dlmalloc
