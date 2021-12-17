@@ -23,6 +23,15 @@ LOCAL_SRC_FILES := audio/audio.cpp
 LOCAL_SHARED_LIBRARIES := libbinder libutils liblog libgui libui libicuuc
 include $(BUILD_SHARED_LIBRARY)
 
+# graphics shims
+include $(CLEAR_VARS)
+LOCAL_MODULE := libshim_graphics
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := graphics/graphics.cpp
+LOCAL_SHARED_LIBRARIES := libui
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_SHARED_LIBRARY)
+
 # libxlog shims
 include $(CLEAR_VARS)
 LOCAL_CFLAGS += $(LIBLOG_CFLAGS)
