@@ -32,6 +32,14 @@ LOCAL_SHARED_LIBRARIES := libui
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
+# omx shims
+include $(CLEAR_VARS)
+LOCAL_MODULE := libshim_omx
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := omx/omx.cpp
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_SHARED_LIBRARY)
+
 # libxlog shims
 include $(CLEAR_VARS)
 LOCAL_CFLAGS += $(LIBLOG_CFLAGS)

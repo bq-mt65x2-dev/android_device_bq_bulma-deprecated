@@ -148,6 +148,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_audio \
     libshim_graphics \
+    libshim_omx \
     libxlog
 
 # Thermal
