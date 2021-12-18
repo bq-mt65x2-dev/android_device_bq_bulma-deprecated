@@ -490,7 +490,7 @@ on post-fs-data
     # device apc settings
 
     # device info /proc interface
-    chmod 0440 /dev/devmap
+    chmod 0444 /dev/devmap
     chown root system /dev/devmap
 
     # BT relayer mode used VCOM
