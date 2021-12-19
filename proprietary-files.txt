@@ -165,7 +165,6 @@ lib/lib3a.so
 lib/libaed.so
 lib/libAGifEncoder.so
 lib/libfmcust.so
-lib/libfmjni.so
 lib/libfmmt6620.so
 lib/libfmmt6627.so
 lib/libfmmt6628.so
