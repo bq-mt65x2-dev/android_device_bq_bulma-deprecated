@@ -124,6 +124,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
 
+# Props
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp
+
 # RIL
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/telephony/apns-conf.xml:system/etc/apns-conf.xml \
