@@ -126,7 +126,7 @@ PRODUCT_COPY_FILES += \
 
 # Props
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
+    persist.sys.usb.config=mtp,adb
 
 # RIL
 PRODUCT_COPY_FILES += \
