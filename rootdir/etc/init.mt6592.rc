@@ -33,7 +33,7 @@ on init
 
 on charger
     mount ext4 /emmc@android /system ro wait
-    start kpoc_charger
+    start battery_charger
     start servicemanager
 
     # disable USB
@@ -1349,8 +1349,9 @@ service aal /system/bin/aal
     user system
     group system graphics radio
 
-service kpoc_charger /system/bin/kpoc_charger
+service battery_charger /charger
     class charger
+    seclabel u:r:healthd:s0
 
 ###########add for 3Gdongle
 

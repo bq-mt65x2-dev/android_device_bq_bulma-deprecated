@@ -79,6 +79,10 @@ BOARD_CUSTOM_MKBOOTIMG := mkmtkbootimg
 # MALLOC
 MALLOC_IMPL := dlmalloc
 
+# Offline Charging
+BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/BOOT/BOOT/boot/boot_mode
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+
 # OTA
 BLOCK_BASED_OTA := false
 TARGET_OTA_ASSERT_DEVICE := bulma,Aquaris_E6,alps
