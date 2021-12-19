@@ -127,7 +127,8 @@ PRODUCT_COPY_FILES += \
 # Props
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=1 \
-    persist.sys.usb.config=mtp,adb
+    persist.sys.usb.config=mtp,adb \
+    ro.mount.fs=EXT4
 
 # RIL
 PRODUCT_COPY_FILES += \
