@@ -32,6 +32,7 @@ qemu.hw.mainkeys=1
 # RIL
 rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
+ro.mtk_enable_md1=1
 ro.telephony.sim.count=2
 persist.radio.default.sim=0
 persist.radio.multisim.config=dsds
