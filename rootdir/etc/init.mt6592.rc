@@ -46,7 +46,7 @@ on fs
 # change partition permissions
     exec /system/bin/chmod 0660 /dev/proinfo
     exec /system/bin/chown root:system /dev/proinfo
-    exec /system/bin/chmod 0660 /dev/nvram
+    exec /system/bin/chmod 0666 /dev/nvram
     exec /system/bin/chown root:system /dev/nvram
     exec /system/bin/chmod 0660 /dev/misc
     exec /system/bin/chown root:system /dev/misc
