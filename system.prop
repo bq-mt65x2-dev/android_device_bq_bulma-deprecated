@@ -36,6 +36,7 @@ ro.mtk_enable_md1=1
 ro.telephony.sim.count=2
 persist.radio.default.sim=0
 persist.radio.multisim.config=dsds
+persist.radio.mobile.data=0,0
 ro.telephony.default_network=0,1
 ril.first.md=1
 ril.flightmode.poweroffMD=1
