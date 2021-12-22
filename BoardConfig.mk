@@ -106,6 +106,9 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 # RIL
 BOARD_RIL_CLASS := ../../../$(DEVICE_PATH)/ril/
 
+# Rootdir
+TARGET_PROVIDES_INIT_RC := true
+
 # Shims
 TARGET_LDPRELOAD += libdirect-coredump.so:libshim_audio.so:libshim_graphics.so:libshim_ril.so:libshim_omx.so:libxlog.so
 

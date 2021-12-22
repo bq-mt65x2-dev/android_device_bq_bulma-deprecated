@@ -141,6 +141,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     enableswap.sh \
     fstab.mt6592 \
+    init.rc \
     init.aee.rc \
     init.modem.rc \
     init.mt6592.rc \
