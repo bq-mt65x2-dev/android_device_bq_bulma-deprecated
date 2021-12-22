@@ -218,6 +218,7 @@ lib/libdirect-coredump.so
 lib/libdpframework.so
 lib/libdrmmtkutil.so
 lib/libdrmmtkwhitelist.so
+lib/libexttestmode.so
 lib/libextsys.so
 lib/libfeatureio.so
 lib/libfile_op.so
