@@ -32,6 +32,15 @@ LOCAL_SHARED_LIBRARIES := libui
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
+# ril shims
+include $(CLEAR_VARS)
+LOCAL_MODULE := libshim_ril
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := netutils/netutils.c
+LOCAL_SHARED_LIBRARIES := libcutils liblog
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_SHARED_LIBRARY)
+
 # omx shims
 include $(CLEAR_VARS)
 LOCAL_MODULE := libshim_omx
