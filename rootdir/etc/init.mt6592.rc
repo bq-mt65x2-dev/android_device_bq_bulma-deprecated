@@ -1091,11 +1091,6 @@ service mnld /system/xbin/mnld
     group system gps inet misc sdcard_rw sdcard_r media_rw
     socket mnld stream 660 gps system
 
-service ipod /system/bin/ipod
-    user root
-    group root
-    disabled
-
 service extmdlogger /system/bin/extmdlogger
     class main
     user shell
