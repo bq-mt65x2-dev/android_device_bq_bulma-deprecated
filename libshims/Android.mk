@@ -32,6 +32,15 @@ LOCAL_SHARED_LIBRARIES := libui
 LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
+# programbinaryservice shims
+include $(CLEAR_VARS)
+LOCAL_MODULE := libshim_program_binary
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := program_binary/program_binary.cpp
+LOCAL_SHARED_LIBRARIES := libcutils
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_SHARED_LIBRARY)
+
 # ril shims
 include $(CLEAR_VARS)
 LOCAL_MODULE := libshim_ril

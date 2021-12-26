@@ -160,6 +160,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_audio \
     libshim_graphics \
+    libshim_program_binary \
     libshim_ril \
     libshim_omx \
     libxlog
